@@ -1,9 +1,8 @@
 ﻿// PascalCase dla nazw metod: AlaMaKota
 // CamelCase dla reszty: alaMaKota
-public class Student
-{
-    private string imie;
-}
+
+
+using Wyklad02.Modeles;
 
 public class Program
 {
@@ -19,5 +18,9 @@ public class Program
         if (wiekAni.HasValue) Console.WriteLine(wiekAni);
         
         Console.WriteLine("Hello World!");
+
+        Student s = new Student();
+        s.Nazwisko = "Kowalski";
+        s.Imie = "Jan";
     }
 }
